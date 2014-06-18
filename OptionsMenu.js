@@ -1,4 +1,5 @@
 var OptionsMenu = function(menu) {
+	var that = this
     var detectIconSize = function() {
         var width = screen.width;
         if (width >= 640) {
@@ -74,6 +75,6 @@ var OptionsMenu = function(menu) {
 	
     // Listen for the menubutton event to hide/show the menu
     document.addEventListener("menubutton", function() {
-        this.toggle()
+        that.toggle()
     }, false);
 };
